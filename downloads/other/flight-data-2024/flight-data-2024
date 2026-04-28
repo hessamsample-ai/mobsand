@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flight Delay Dataset &#x2014; 2024 | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="2024 Flight Delays: 7M&#x2B; Rows for ML, EDA, and Insights" />
+    <meta name="keywords" content="data visualization,travel,exploratory data analysis,united states,aviation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1777381966270;
+    window["pageRequestEndTime"] = 1777381966276;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-079e68ddcae7b250.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=a53f951c511cf82e" />
+
+  
+    
+ 
+      <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets',
+            'user_properties': {
+                'logged_in': false,
+            }
+        });
+    </script>
+    <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024" />
+    <meta property="og:title" content="Flight Delay Dataset &#x2014; 2024" />
+    <meta property="og:description" content="2024 Flight Delays: 7M&#x2B; Rows for ML, EDA, and Insights" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+        <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/8315679/13126837/61a1a848ee78e995989dc8d51321be5b/dataset-card.png?t=2025-09-21-15-37-12" />
+        <meta property="twitter:image" content="https://storage.googleapis.com/kaggle-datasets-images/8315679/13126837/61a1a848ee78e995989dc8d51321be5b/dataset-card.png?t=2025-09-21-15-37-12" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="Pq0WaMTO+PSfeA+tizYLUw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Flight Delay Dataset — 2024","description":"# Flight Delay Dataset — 2024\n\n## Description\nThis dataset contains detailed flight performance and delay information for domestic flights in **2024**, merged from monthly BTS TranStats files into a single cleaned dataset. It includes over **7 million rows** and **35 columns**, providing comprehensive information on scheduled and actual flight times, delays, cancellations, diversions, and distances between airports. The dataset is suitable for exploratory data analysis (EDA), machine learning tasks such as delay prediction, time series analysis, and airline/airport performance studies.\n\nMonthly CSV files for January–December 2024 were downloaded from the **BTS TranStats On-Time Performance database**, and 35 relevant columns were selected. The monthly files were merged into a single dataset using pandas, with cleaning steps including standardizing column names to snake_case (e.g., `flight_date`, `dep_delay`), converting `flight_date` to ISO format (`YYYY-MM-DD`), converting `cancelled` and `diverted` to binary indicators (0/1), and filling missing values in delay-related columns (`carrier_delay`, `weather_delay`, `nas_delay`, `security_delay`, `late_aircraft_delay`) with 0, while preserving all other values as in the original data.\n\n**Source:** Available at [BTS TranStats](https://www.transtats.bts.gov/DL_SelectFields.aspx?gnoyr_VQ=FGJ&amp;QO_fu146_anzr=b0-gvzr)\n\n---\n\n## File Description\n- **`flight_data_2024.csv`** — full cleaned dataset (~7M rows, 35 columns)  \n- **`flight_data_2024_sample.csv`** — sample dataset (10,000 rows)  \n- **`flight_data_2024_data_dictionary.csv`** — column names, data types, null percentage, and example values  \n- **`README.md`** — dataset overview and usage instructions  \n- **`LICENSE.txt`** — CC0 license  \n- **`dataset-metadata.json`** — Kaggle metadata for the dataset\n\n---\n\n## Column Description\n\n| Column Name               | Description |\n|---------------------------|-------------|\n| `year`                    | Year of flight |\n| `month`                   | Month of flight (1–12) |\n| `day_of_month`            | Day of the month |\n| `day_of_week`             | Day of week (1=Monday … 7=Sunday) |\n| `fl_date`                 | Flight date (YYYY-MM-DD) |\n| `op_unique_carrier`       | Unique carrier code |\n| `op_carrier_fl_num`       | Flight number for reporting airline |\n| `origin`                  | Origin airport code |\n| `origin_city_name`        | Origin city name |\n| `origin_state_nm`         | Origin state name |\n| `dest`                    | Destination airport code |\n| `dest_city_name`          | Destination city name |\n| `dest_state_nm`           | Destination state name |\n| `crs_dep_time`            | Scheduled departure time (local, hhmm) |\n| `dep_time`                | Actual departure time (local, hhmm) |\n| `dep_delay`               | Departure delay in minutes (negative if early) |\n| `taxi_out`                | Taxi out time in minutes |\n| `wheels_off`              | Wheels-off time (local, hhmm) |\n| `wheels_on`               | Wheels-on time (local, hhmm) |\n| `taxi_in`                 | Taxi in time in minutes |\n| `crs_arr_time`            | Scheduled arrival time (local, hhmm) |\n| `arr_time`                | Actual arrival time (local, hhmm) |\n| `arr_delay`               | Arrival delay in minutes (negative if early) |\n| `cancelled`               | Cancelled flight indicator (0=No, 1=Yes) |\n| `cancellation_code`       | Reason for cancellation (if cancelled) |\n| `diverted`                | Diverted flight indicator (0=No, 1=Yes) |\n| `crs_elapsed_time`        | Scheduled elapsed time in minutes |\n| `actual_elapsed_time`     | Actual elapsed time in minutes |\n| `air_time`                | Flight time in minutes |\n| `distance`                | Distance between origin and destination (miles) |\n| `carrier_delay`           | Carrier-related delay in minutes |\n| `weather_delay`           | Weather-related delay in minutes |\n| `nas_delay`               | National Air System delay in minutes |\n| `security_delay`          | Security delay in minutes |\n| `late_aircraft_delay`     | Late aircraft delay in minutes |\n","url":"https://www.kaggle.com/hrishitpatil/flight-data-2024","version":2,"keywords":["technique, data visualization","subject, people and society, business, travel","technique, exploratory data analysis","geography and places, north america, united states","subject, science and technology, transportation, aviation"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["8315679"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Hrishit Patil","url":"https://www.kaggle.com/hrishitpatil","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/27834697-kg.png?t=2026-04-22-13-08-05"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/hrishitpatil/flight-data-2024/download?datasetVersionNumber=2","contentSize":"283545854 bytes"}],"commentCount":0,"dateModified":"2025-09-21T16:51:21.167Z","discussionUrl":"https://www.kaggle.com/hrishitpatil/flight-data-2024/discussion","alternateName":"2024 Flight Delays: 7M+ Rows for ML, EDA, and Insights","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/8315679/13126837/61a1a848ee78e995989dc8d51321be5b/dataset-card.png?t=2025-09-21-15-37-12","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":5721},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":23996},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":36}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+
+    <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="Pq0WaMTO+PSfeA+tizYLUw==" src="/static/assets/runtime.js?v=3705764d95bdc4e5"></script>
+  <script nonce="Pq0WaMTO+PSfeA+tizYLUw==" src="/static/assets/vendor.js?v=f36df333f5148fa7"></script>
+  <script nonce="Pq0WaMTO+PSfeA+tizYLUw==" src="/static/assets/app.js?v=0283a3ac42548e6b"></script>
+    <script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="Pq0WaMTO&#x2B;PSfeA&#x2B;tizYLUw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
