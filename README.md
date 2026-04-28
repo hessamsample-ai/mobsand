@@ -1,4 +1,4 @@
-# mob-sand (special thanks to @maanimis)
+# mob-sand (special thanks to @maanimis!)
 
 <div dir="rtl">
 
